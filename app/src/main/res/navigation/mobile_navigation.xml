@@ -24,7 +24,7 @@
         tools:layout="@layout/fragment_notifications" />
     <fragment
         android:id="@+id/navigation_cad_venda_carro"
-        android:name="br.dev.ciquelerogabriel.mobile.vendascarros.cadVendasCarros"
+        android:name="br.dev.ciquelerogabriel.mobile.vendascarros.ui.vendascarros.cadVendasCarros"
         android:label="@string/title_cad_venda_carro"
         tools:layout="@layout/fragment_cad_vendas_carros" />
 </navigation>
