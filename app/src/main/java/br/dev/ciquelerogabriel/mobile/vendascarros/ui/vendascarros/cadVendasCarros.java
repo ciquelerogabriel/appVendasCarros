@@ -14,13 +14,15 @@ import br.dev.ciquelerogabriel.mobile.vendascarros.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link cadVendasCarros#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class cadVendasCarros extends Fragment {
 
     // atributos
     private EditText etNome;
+    private EditText etCPF;
+    private EditText etChassi;
+
 
 
     @Override

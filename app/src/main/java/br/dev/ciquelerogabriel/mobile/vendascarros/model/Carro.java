@@ -53,14 +53,14 @@ public class Carro {
     public JSONObject toJsonObject() {
         JSONObject json = new JSONObject();
         try {
-            json.put("data", this.data);
-            json.put("marca", this.marca);
-            json.put("modelo", this.modelo);
-            json.put("ano", this.ano);
-            json.put("placa", this.placa);
-            json.put("chassi", this.chassi);
-            json.put("valor", this.valor);
-            json.put("garantia", this.garantia);
+            json.put("data", this.dataCarro);
+            json.put("marca", this.marcaCarro);
+            json.put("modelo", this.modeloCarro);
+            json.put("ano", this.anoCarro);
+            json.put("placa", this.placaCarro);
+            json.put("chassi", this.chassiCarro);
+            json.put("valor", this.valorCarro);
+            json.put("garantia", this.garantiaCarro);
         } catch (JSONException e) {
             e.printStackTrace();
         }
