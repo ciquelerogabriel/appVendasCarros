@@ -84,7 +84,7 @@
             this.etValor = (EditText) root.findViewById(R.id.etValor);
             this.cvData = (CalendarView) root.findViewById(R.id.cvData);
             this.spGarantia = (Spinner) root.findViewById(R.id.spGarantia);
-            this.btSalvar = (EditText) root.findViewById(R.id.btSalvar);
+            //this.btSalvar = (EditText) root.findViewById(R.id.btSalvar);
 
             //instanciando a fila de requests - caso o objeto seja o root
             this.requestQueue = Volley.newRequestQueue(root.getContext());
