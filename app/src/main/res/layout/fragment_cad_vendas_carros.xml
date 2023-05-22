@@ -18,46 +18,142 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nome" />
+                android:text="Nome completo do cliente:" />
 
             <EditText
                 android:id="@+id/etNome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:inputType="textPersonName"/>
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CPF" />
+                android:text="CPF do cliente:" />
 
             <EditText
                 android:id="@+id/etCPF"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="CPF" />
+                android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Chassi" />
+                android:text="Contato do cliente:" />
+
+            <EditText
+                android:id="@+id/etContato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marca do veículo:" />
+
+            <Spinner
+                android:id="@+id/spMarca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/opcoes_marca" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modelo do veículo:" />
+
+            <EditText
+                android:id="@+id/etModelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ano de fabricação:" />
+
+            <Spinner
+                android:id="@+id/spAno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/opcoes_ano" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número da placa:" />
+
+            <EditText
+                android:id="@+id/etPlaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chassi:" />
 
             <EditText
                 android:id="@+id/etChassi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Chassi" />
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Valor da compra:" />
+
+            <EditText
+                android:id="@+id/etValor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data da compra:" />
+
+            <CalendarView
+                android:id="@+id/cvData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saiu com garantia de 12 meses?" />
+
+            <Spinner
+                android:id="@+id/spGarantia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/opcoes_garantia" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/Svr"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="SALVAR" />

@@ -20,20 +20,20 @@ public class Carro {
 
 
     //construtor
-   public Carro (JSONObject jo) {
-       try {
-           this.dataCarro = jo.getString("data");
-           this.marcaCarro = jo.getString("marca");
-           this.modeloCarro = jo.getString("modelo");
-           this.anoCarro = jo.getInt("ano");
-           this.placaCarro = jo.getString("placa");
-           this.chassiCarro = jo.getString("chassi");
-           this.valorCarro = jo.getDouble("valor");
-           this.garantiaCarro = jo.getString("garantia");
-       } catch (JSONException je){
-           je.printStackTrace();
-       }
-       }
+    public Carro(JSONObject jo) {
+        try {
+            this.dataCarro = jo.getString("data");
+            this.marcaCarro = jo.getString("marca");
+            this.modeloCarro = jo.getString("modelo");
+            this.anoCarro = jo.getInt("ano");
+            this.placaCarro = jo.getString("placa");
+            this.chassiCarro = jo.getString("chassi");
+            this.valorCarro = jo.getDouble("valor");
+            this.garantiaCarro = jo.getString("garantia");
+        } catch (JSONException je) {
+            je.printStackTrace();
+        }
+    }
 
 
     public Carro() {
@@ -67,15 +67,17 @@ public class Carro {
         return json;
     }
 
-
-    public String getMarcaCarro () {
+    public void setMarcaCarro(String marca) {
+        this.marcaCarro = marca;
+    }
+    public String getMarcaCarro() {
         return this.marcaCarro;
     }
+
+
     public int getIdCliente() {
         return idCliente;
     }
-
-
     public void setIdCliente(int idCliente) {
         this.idCliente = idCliente;
     }
@@ -84,45 +86,64 @@ public class Carro {
     public int getId() {
         return id;
     }
-
-
     public void setId(int id) {
         this.id = id;
     }
 
 
-    public void setMarcaCarro (String marca) {
-        this.marcaCarro = marca;
-    }
-
-
-
-    public String getModeloCarro () {
+    public String getModeloCarro() {
         return this.modeloCarro;
     }
-    public void setModeloCarro (String modelo) {
+    public void setModeloCarro(String modelo) {
         this.modeloCarro = modelo;
     }
 
 
+    public String getDataCarro() {
+        return this.dataCarro;
+    }
+    public void setDataCarro(String data) {
+        this.dataCarro = data;
+    }
 
-    public int getAnoCarro () {
+
+    public int getAnoCarro() {
         return this.anoCarro;
     }
-    public void setAnoCarro (int ano) {
+    public void setAnoCarro(int ano) {
         this.anoCarro = ano;
     }
 
 
-
-    public String getPlacaCarro () {
+    public String getPlacaCarro() {
         return this.placaCarro;
     }
-    public void setPlacaCarro (String placa) {
+    public void setPlacaCarro(String placa) {
         this.placaCarro = placa;
     }
 
 
-
-    public String getChassiCarro () {
+    public String getChassiCarro() {
         return this.chassiCarro;
+    }
+    public void setChassiCarro(String chassi) {
+        this.chassiCarro = chassi;
+    }
+
+
+    public double getValorCarrp() {
+        return this.valorCarro;
+    }
+    public void setValorCarro(double valor) {
+        this.valorCarro = valor;
+    }
+
+
+    public String getGarantiaCarro() {
+        return this.garantiaCarro;
+    }
+
+    public void setGarantiaCarro(String g) {
+        this.garantiaCarro = g;
+    }
+}
