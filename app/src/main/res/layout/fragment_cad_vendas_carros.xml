@@ -153,10 +153,14 @@
                 android:entries="@array/opcoes_garantia" />
 
             <Button
-                android:id="@+id/Svr"
+                android:id="@+id/btSalvar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="SALVAR" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
         </LinearLayout>
     </ScrollView>
 </FrameLayout>

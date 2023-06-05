@@ -85,6 +85,9 @@
             this.cvData = (CalendarView) root.findViewById(R.id.cvData);
             this.spGarantia = (Spinner) root.findViewById(R.id.spGarantia);
             //this.btSalvar = (EditText) root.findViewById(R.id.btSalvar);
+            this.btSalvar = (Button) root.findViewById(R.id.btSalvar);
+            this.btSalvar.setOnClickListener(this);
+
 
             //instanciando a fila de requests - caso o objeto seja o root
             this.requestQueue = Volley.newRequestQueue(root.getContext());
@@ -99,7 +102,7 @@
         public void onClick(View view) {
             switch (view.getId()) {
     //verificando se é o botão salvar
-                case R.id.Svr:
+                case R.id.btSalvar:
                     //instanciando classe de negócio
                     Carro p = new Carro();
                     //populando objeto com dados da tela
@@ -119,7 +122,7 @@
                     //request para servidor REST
                     jsonObjectReq = new JsonObjectRequest(
                             Request.Method.POST,
-                            "http://10.0.2.2:8080/segServer/rest/usuario",
+                            "http://10.0.2.2/cadpedidosos.php",
                             p.toJsonObject(), this, this);
                     requestQueue.add(jsonObjectReq);
                     break;
