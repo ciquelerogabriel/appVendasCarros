@@ -10,13 +10,6 @@
         android:name="br.dev.ciquelerogabriel.mobile.vendascarros.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="br.dev.ciquelerogabriel.mobile.vendascarros.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="br.dev.ciquelerogabriel.mobile.vendascarros.ui.notifications.NotificationsFragment"
@@ -24,7 +17,12 @@
         tools:layout="@layout/fragment_notifications" />
     <fragment
         android:id="@+id/navigation_cad_venda_carro"
-        android:name="br.dev.ciquelerogabriel.mobile.vendascarros.ui.vendascarros.cadVendasCarros"
+        android:name="br.dev.ciquelerogabriel.mobile.vendascarros.ui.vendascarros.CadVendasCarrosFragment"
         android:label="@string/title_cad_venda_carro"
         tools:layout="@layout/fragment_cad_vendas_carros" />
+    <fragment
+        android:id="@+id/navigation_con_venda_carro"
+        android:name="br.dev.ciquelerogabriel.mobile.vendascarros.ui.vendascarros.ConCarroFragment"
+        android:label="@string/title_con_venda_carro"
+        tools:layout="@layout/fragment_con_carro_list" />
 </navigation>

@@ -1,6 +1,5 @@
     package br.dev.ciquelerogabriel.mobile.vendascarros.ui.vendascarros;
 
-    import android.content.Context;
     import android.os.Bundle;
 
     import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +12,6 @@
     import android.widget.CalendarView;
     import android.widget.EditText;
     import android.widget.Spinner;
-    import android.widget.Toast;
 
     import com.android.volley.Request;
     import com.android.volley.RequestQueue;
@@ -33,7 +31,7 @@
      * A simple {@link Fragment} subclass.
      * create an instance of this fragment.
      */
-    public class cadVendasCarros extends Fragment implements View.OnClickListener, Response.ErrorListener,
+    public class CadVendasCarrosFragment extends Fragment implements View.OnClickListener, Response.ErrorListener,
             Response.Listener {
 
         // atributos
