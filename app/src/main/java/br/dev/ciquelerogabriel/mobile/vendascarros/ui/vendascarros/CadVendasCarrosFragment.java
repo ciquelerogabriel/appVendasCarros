@@ -113,14 +113,14 @@
                     p.setAnoCarro(this.spAno.getSelectedItemPosition());
                     p.setGarantiaCarro(String.valueOf(this.spGarantia.getSelectedItemPosition()));
                     //Pegando a Data do CalendarView
-                    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
                     String dataSelecionada = sdf.format(new Date(cvData.getDate()));
                     p.setDataCarro(dataSelecionada);
 
                     //request para servidor REST
                     jsonObjectReq = new JsonObjectRequest(
                             Request.Method.POST,
-                            "http://10.0.2.2/cadpedidosos.php",
+                            "http://10.0.2.2/cadvendascarros.php",
                             p.toJsonObject(), this, this);
                     requestQueue.add(jsonObjectReq);
                     break;
